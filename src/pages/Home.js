@@ -12,10 +12,9 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ddd;
 `;
 const Header = styled.div`
-  font-size: 40px;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,24 +24,26 @@ const Content = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 1rem;
   background-color: #fff;
-  border-radius: 10px;
-
-  width: 600px;
-  padding: 40px 0;
+  border-radius: 0.625rem;
 `;
 const Title = styled.div`
-  font-size: 30px;
-  margin-top: 40px;
+  font-size: 1.25rem;
+  font-weight: 600;
 `;
 const LogoImage = styled.div`
   margin-top: 10px;
+  img {
+    width: 20rem;
+    height: 20rem;
+  }
 `;
 const Desc = styled.div`
-  font-size: 20px;
-  margin-top: 20px;
-  `;
+  font-size: 1.125rem;
+  margin: 1.125rem 0;
+  font-weight: 600;
+`;
 
 const Home = () => {
   const navigate = useNavigate();
@@ -57,15 +58,22 @@ const Home = () => {
         <LogoImage>
           <img 
             className='rounded-circle' 
-            src={PangImage} 
-            width={350} 
-            height={350} 
+            src={PangImage}
           />
         </LogoImage>
         <Desc>
           MBTI를 기반으로 나랑 잘맞는 고양이 찾기
         </Desc>
-        <Button onClick={handleClickButton} style={{ padding: '10px 20px', fontSize: '24px' }}>테스트 시작</Button>
+        <Button 
+          onClick={handleClickButton} 
+          style={{ 
+            padding: '10px 20px', 
+            fontSize: '1.25rem', 
+            fontWeight: '400' 
+          }}
+        >
+          테스트 시작
+        </Button>
       </Content>
     </Wrapper>
   )

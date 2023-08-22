@@ -17,7 +17,9 @@ const Container = styled.div`
   height: calc(100vh - 16px);
 `;
 const Title = styled.div`
-  font-size: 30px;
+  width: 90%;
+  font-size: 1.25rem;
+  font-weight: 600;
   text-align: center;
   margin-bottom: 20px;
 `;
@@ -77,7 +79,7 @@ const Quetions = () => {
 
   return (
     <Wrapper>
-      <ProgressBar animated now={progress} />
+      <ProgressBar now={progress} />
       <Container>
         <Title>{QuestionData[questionNo].title}</Title>
         <ButtonGroup>

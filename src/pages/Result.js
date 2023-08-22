@@ -14,10 +14,9 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ddd;
 `;
 const Header = styled.div`
-  font-size: 40px;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,19 +26,19 @@ const Content = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 1rem;
   background-color: #fff;
-  border-radius: 10px;
-
-  width: 600px;
-  padding: 40px 0;
+  border-radius: 0.625rem;
 `;
 const Title = styled.div`
-  font-size: 30px;
-  margin-top: 40px;
+  font-size: 1.25rem;
+  font-weight: 600;
 `;
 const LogoImage = styled.div`
-  margin-top: 10px;
+  img {
+    width: 20rem;
+    height: 20rem;
+  }
 `;
 const Desc = styled.div`
   font-size: 20px;
